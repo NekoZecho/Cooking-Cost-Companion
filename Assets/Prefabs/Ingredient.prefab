@@ -243,7 +243,7 @@ MonoBehaviour:
   m_text: "\u200B"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: f6bc2d1322e0d8e4ea0306246833be10, type: 2}
-  m_sharedMaterial: {fileID: -8396891692011078254, guid: f6bc2d1322e0d8e4ea0306246833be10, type: 2}
+  m_sharedMaterial: {fileID: -5184691826301964305, guid: f6bc2d1322e0d8e4ea0306246833be10, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -430,7 +430,7 @@ MonoBehaviour:
   m_text: '#'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: f6bc2d1322e0d8e4ea0306246833be10, type: 2}
-  m_sharedMaterial: {fileID: -8396891692011078254, guid: f6bc2d1322e0d8e4ea0306246833be10, type: 2}
+  m_sharedMaterial: {fileID: -5184691826301964305, guid: f6bc2d1322e0d8e4ea0306246833be10, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -585,7 +585,7 @@ MonoBehaviour:
   m_text: Ingredient Name
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: f6bc2d1322e0d8e4ea0306246833be10, type: 2}
-  m_sharedMaterial: {fileID: -8396891692011078254, guid: f6bc2d1322e0d8e4ea0306246833be10, type: 2}
+  m_sharedMaterial: {fileID: -5184691826301964305, guid: f6bc2d1322e0d8e4ea0306246833be10, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -685,7 +685,7 @@ GameObject:
   - component: {fileID: 7521412969980619223}
   m_Layer: 5
   m_Name: Ingredient
-  m_TagString: Untagged
+  m_TagString: Cost
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -969,7 +969,7 @@ MonoBehaviour:
   m_text: CPU
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: f6bc2d1322e0d8e4ea0306246833be10, type: 2}
-  m_sharedMaterial: {fileID: -8396891692011078254, guid: f6bc2d1322e0d8e4ea0306246833be10, type: 2}
+  m_sharedMaterial: {fileID: -5184691826301964305, guid: f6bc2d1322e0d8e4ea0306246833be10, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1069,7 +1069,7 @@ GameObject:
   - component: {fileID: 7222761231084159224}
   m_Layer: 5
   m_Name: Ingredient Quantity
-  m_TagString: Untagged
+  m_TagString: Qty
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1298,7 +1298,7 @@ MonoBehaviour:
   m_text: "\u200B"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: f6bc2d1322e0d8e4ea0306246833be10, type: 2}
-  m_sharedMaterial: {fileID: -8396891692011078254, guid: f6bc2d1322e0d8e4ea0306246833be10, type: 2}
+  m_sharedMaterial: {fileID: -5184691826301964305, guid: f6bc2d1322e0d8e4ea0306246833be10, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1484,7 +1484,7 @@ MonoBehaviour:
   m_text: "\u200B"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: f6bc2d1322e0d8e4ea0306246833be10, type: 2}
-  m_sharedMaterial: {fileID: -8396891692011078254, guid: f6bc2d1322e0d8e4ea0306246833be10, type: 2}
+  m_sharedMaterial: {fileID: -5184691826301964305, guid: f6bc2d1322e0d8e4ea0306246833be10, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
