@@ -31,7 +31,7 @@ public class GetInputFieldValue : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.E))
+        if (Input.GetKeyDown(KeyCode.Return))
         {
             float.TryParse(flourCost.text, out cost);
             PlayerPrefs.SetFloat("Flour Cost", cost);

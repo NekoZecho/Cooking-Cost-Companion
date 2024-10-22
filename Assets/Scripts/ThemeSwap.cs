@@ -21,7 +21,7 @@ public class ThemeSwap : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.R))
+        if (Input.GetKeyDown(KeyCode.RightShift))
         {
             if (swap == 0)
             {
