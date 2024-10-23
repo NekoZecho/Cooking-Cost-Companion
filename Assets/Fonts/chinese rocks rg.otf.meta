@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: f60dc12d421ebbc45b5841fea13d9b3b
+guid: c44291b4fd0926a499fdc9a0b6c46d9f
 TrueTypeFontImporter:
   externalObjects: {}
   serializedVersion: 4
@@ -9,7 +9,7 @@ TrueTypeFontImporter:
   characterPadding: 1
   includeFontData: 1
   fontNames:
-  - Minecraft
+  - Chinese Rocks
   fallbackFontReferences: []
   customCharacters: 
   fontRenderingMode: 0

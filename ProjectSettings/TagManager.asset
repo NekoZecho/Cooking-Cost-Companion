@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Cost
   - Qty
+  - Name
   layers:
   - Default
   - TransparentFX

@@ -8,27 +8,23 @@ public class GetInputFieldValue : MonoBehaviour
     [SerializeField]
     TMP_InputField flourCost;
     [SerializeField]
-    TMP_InputField flourProfit;
+    TMP_InputField markupField;
     [SerializeField]
     TMP_InputField batchQuantity;
     [SerializeField]
     TMP_Text PPU;
     float flourAmt;
     float cost;
-    float profitMargin;
+    float markup;
     float quantityOfBatch;
     float pricePerUnit;
+    GameObject[] Names;
     GameObject[] Costs;
     GameObject[] Qty;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        cost = PlayerPrefs.GetFloat("Flour Cost");
-        flourCost.text = (cost.ToString());
-        flourAmt = PlayerPrefs.GetFloat("Flour Amount");
-        flour.text = (flourAmt.ToString());
-        quantityOfBatch = PlayerPrefs.GetFloat("Units Per Batch");
-        batchQuantity.text = (quantityOfBatch.ToString());
+        
     }
 
     // Update is called once per frame
@@ -36,20 +32,7 @@ public class GetInputFieldValue : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Return))
         {
-            float.TryParse(flourCost.text, out cost);
-            PlayerPrefs.SetFloat("Flour Cost", cost);
-            float.TryParse(flour.text, out flourAmt);
-            PlayerPrefs.SetFloat("Flour Amount", flourAmt);
-            float.TryParse(flourProfit.text, out profitMargin);
-            PlayerPrefs.SetFloat("Profit Margin", profitMargin);
-            float.TryParse(batchQuantity.text, out quantityOfBatch);
-            PlayerPrefs.SetFloat("Units Per Batch", quantityOfBatch);
-            pricePerUnit = ((flourAmt * cost) * profitMargin) / quantityOfBatch;
-            PlayerPrefs.SetFloat("Price Per Unit", pricePerUnit);
-            PPU.text = ("PPU: " + pricePerUnit.ToString());
-        }
-        else if (Input.GetKeyDown(KeyCode.E))
-        {
+            Names = GameObject.FindGameObjectsWithTag("Name");
             Costs = GameObject.FindGameObjectsWithTag("Cost");
             Qty = GameObject.FindGameObjectsWithTag("Qty");
             float sum = 0;
@@ -61,12 +44,13 @@ public class GetInputFieldValue : MonoBehaviour
                 float.TryParse(Qty[i].GetComponent<TMP_InputField>().text, out q);
                 sum += (c * q);
             }
-            float.TryParse(flourProfit.text, out profitMargin);
-            PlayerPrefs.SetFloat("Profit Margin", profitMargin);
+            float.TryParse(markupField.text, out markup);
+            PlayerPrefs.SetFloat("Markup", markup);
             float.TryParse(batchQuantity.text, out quantityOfBatch);
             PlayerPrefs.SetFloat("Units Per Batch", quantityOfBatch);
-            pricePerUnit = ((sum * profitMargin)/quantityOfBatch);
+            pricePerUnit = ((sum * markup)/quantityOfBatch);
             PPU.text = ("PPU: " + pricePerUnit.ToString());
+
         }
     }
 }
