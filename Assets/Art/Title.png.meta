@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 77ccb8f167ff8fd49881b2b1e2a318ed
+guid: bd2c10c4a5447374181bb19931aaff0f
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -97,13 +97,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: TriTechLogo (1) 1_0
+      name: Title_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 134
-        width: 370
-        height: 134
+        x: 47
+        y: 15
+        width: 232
+        height: 78
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -111,20 +111,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 30e2f2e9df025c542bf5922476f2bdb7
-      internalID: 1179157703
+      spriteID: ed2ee84f8e335874b8f9dac065bd0608
+      internalID: 1534978671
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TriTechLogo (1) 1_1
+      name: Title_1
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 370
-        height: 134
+        x: 280
+        y: 26
+        width: 148
+        height: 61
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -132,8 +132,29 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 386382b7dbf5c2b4b91a3aaf8958cf0c
-      internalID: 1895890861
+      spriteID: 71f30bf500b12bc43b4f10e5e9dfecd3
+      internalID: -1984904590
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Title_2
+      rect:
+        serializedVersion: 2
+        x: 433
+        y: 18
+        width: 323
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4bc56e0987f352840b653248be291ca1
+      internalID: 708793735
       vertices: []
       indices: 
       edges: []
@@ -149,8 +170,9 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      TriTechLogo (1) 1_0: 1179157703
-      TriTechLogo (1) 1_1: 1895890861
+      Title_0: 1534978671
+      Title_1: -1984904590
+      Title_2: 708793735
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
