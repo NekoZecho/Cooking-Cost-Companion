@@ -26,7 +26,7 @@ public class ThemeSwap : MonoBehaviour
             if (swap == 0)
             {
                 BackGround.sprite = BG_G;
-                swap = 1;
+                swap++;
             }
             else if (swap == 1)
             {
