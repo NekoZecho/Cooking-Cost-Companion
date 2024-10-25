@@ -4,7 +4,7 @@ using System.Linq;
 using TMPro;
 using UnityEngine;
 
-public class IngredientSystem : MonoBehaviour, IDataPersistence
+public class IngredientSystem : MonoBehaviour
 {
     [SerializeField]
     TMP_InputField markupField;
@@ -18,26 +18,10 @@ public class IngredientSystem : MonoBehaviour, IDataPersistence
     GameObject[] Names;
     GameObject[] Costs;
     GameObject[] Qty;
-    string namesList = "";
-    string costsList = "";
-    string qtyList = "";
 
  
 
-    public void LoadData(GameData data)
-    {
-        this.namesList = data.listOfNames;
-        this.costsList = data.listOfCosts;
-        this.qtyList = data.listofQuantities;
-    }
-
-    public void SaveData(ref GameData data)
-    {
-        data.listOfNames = namesList;
-        data.listOfCosts = costsList;
-        data.listofQuantities = qtyList;
-    }
-    
+ 
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.Return))
@@ -46,20 +30,6 @@ public class IngredientSystem : MonoBehaviour, IDataPersistence
             calculateCosts();
             prepareToSave();
 
-        }
-        if (Input.GetKeyDown(KeyCode.Backslash))
-        {
-            findTheNumbers();
-            List<string> aNamesList = namesList.Split(',').ToList();
-            for (int i = 0; i < Names.Length; i++)
-            {
-                if (aNamesList[i] == " ")
-                {
-                    Names[i].GetComponent<TMP_InputField>().text = "";
-                }
-                Names[i].GetComponent<TMP_InputField>().text = aNamesList[i];
-
-            }
         }
     }
 
